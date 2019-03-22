@@ -1,3 +1,18 @@
+## RFID-Enabled Server Monitor App
+
+You need to Bring your own backend (BYOB). Sample Data for simulation will be provided.
+
+## Tech Stack:
+
+- React
+- Typescript
+- Formik for forms handling
+- Tslint, Prettier for code standards
+- Husky pre-commit hook
+- Ant Design component library
+
+## CRA Readme
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
