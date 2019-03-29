@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
-import { Editor, EditorFormValues } from '../editor/editor'
+import { AppLayout } from '../layout/layout';
 
 /* Main App */
-class App extends Component {
-  dummySubmit = async (values: EditorFormValues) => {
-    console.log(values)
-    return null
-  }
 
-  public render() {
-    return (
-      <div>
-        <h1>RFID Enabled Server Monitor</h1>
-        <h2>Sample form to test Formik and ant-ui</h2>
-        <Editor submit={this.dummySubmit} />
-      </div>
-    )
-  }
+class App extends Component<any> {
+    // private dummySubmit = async (values: EditorFormValues) => {
+    //     console.log(values)
+    //     return null
+    // }
+
+    public render(): React.ReactNode {
+        return (
+          <AppLayout></AppLayout>
+        )
+    }
 }
 
 export default App
