@@ -1,5 +1,5 @@
 {
-    "name": "server-rfid-monitor",
+    "name": "react-complete-application-template",
     "version": "0.1.0",
     "private": true,
     "proxy": "http://localhost:8080",
@@ -8,6 +8,7 @@
         "@types/node": "11.9.5",
         "@types/yup": "^0.26.12",
         "antd": "^3.15.0",
+        "axios": "^0.18.0",
         "formik": "^1.5.1",
         "react": "^16.8.3",
         "react-dom": "^16.8.3",
@@ -16,7 +17,8 @@
         "react-scripts": "^2.1.8",
         "react-transition-group": "^2.7.0",
         "redux": "^4.0.1",
-        "typescript": "3.3.3333",
+        "redux-thunk": "^2.3.0",
+        "typescript": "3.4",
         "yup": "^0.27.0"
     },
     "scripts": {
