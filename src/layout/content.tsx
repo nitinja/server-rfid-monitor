@@ -1,6 +1,6 @@
 import React from 'react'
-import { Icon, Layout, Menu } from 'antd'
-const { Content, Sider } = Layout
+// import { Icon, Layout, Menu } from 'antd'
+// const { Content, Sider } = Layout
 
 
 type AppContentProps = {
@@ -8,15 +8,7 @@ type AppContentProps = {
 }
 export function AppContent(props: AppContentProps) {
     return (
-        <Content
-            style={{
-                background: '#fff',
-                padding: 24,
-                margin: 0,
-                minHeight: 280,
-            }}
-        >
-            {props.children}
-        </Content>
+        <div>content</div>
+
     )
 }

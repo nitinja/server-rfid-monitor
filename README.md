@@ -14,6 +14,13 @@ You need to Bring your own backend (BYOB). Node sample backend for auth and crud
 -   Test cases (coming)
 -   Docker for deployment image
 
+## TODO
+
+-   Add style lint to avoid css code smells like usage of magic number, hardcoded colors
+-   Add more tests!
+
+----------------------------------------- CRA readme -----------------------------------------
+
 ## CRA Readme
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

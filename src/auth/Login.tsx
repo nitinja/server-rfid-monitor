@@ -45,8 +45,8 @@ const LoginWithFormik = withFormik<MyFormProps, FormValues>({
             .min(6)
             .required(),
     }),
-  handleSubmit({ email, password }, { props, setErrors, setSubmitting }) {
-      props.login(email, password);
+    handleSubmit({ email, password }, { props, setErrors, setSubmitting }) {
+        props.login(email, password)
     },
 })(_Login)
 

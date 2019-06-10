@@ -4,10 +4,11 @@
     "private": true,
     "proxy": "http://localhost:8080",
     "dependencies": {
+        "@material-ui/core": "^4.0.2",
+        "@material-ui/icons": "^4.0.1",
         "@types/jest": "24.0.9",
         "@types/node": "11.9.5",
         "@types/yup": "^0.26.12",
-        "antd": "^3.15.0",
         "axios": "^0.18.0",
         "formik": "^1.5.1",
         "react": "^16.8.3",
@@ -18,21 +19,15 @@
         "react-transition-group": "^2.7.0",
         "redux": "^4.0.1",
         "redux-thunk": "^2.3.0",
+        "typeface-roboto": "0.0.54",
         "typescript": "3.4",
         "yup": "^0.27.0"
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "standard &&  react-scripts build",
-        "test": "standard && react-scripts test",
-        "standard": "standard",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
         "eject": "react-scripts eject"
-    },
-    "standard": {
-        "parser": "@typescript-eslint/parser",
-        "plugins": [
-            "@typescript-eslint"
-        ]
     },
     "browserslist": [
         ">0.2%",
