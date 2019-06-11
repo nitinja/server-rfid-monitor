@@ -136,7 +136,7 @@ const Layout = ({ children }: LayoutProps) => {
         >
             <MenuItem>
                 <IconButton aria-label="Show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="secondary">
+                    <Badge badgeContent={666} color="secondary">
                         <MailIcon />
                     </Badge>
                 </IconButton>
@@ -144,7 +144,7 @@ const Layout = ({ children }: LayoutProps) => {
             </MenuItem>
             <MenuItem>
                 <IconButton aria-label="Show 11 new notifications" color="inherit">
-                    <Badge badgeContent={11} color="secondary">
+                    <Badge badgeContent={18} color="secondary">
                         <NotificationsIcon />
                     </Badge>
                 </IconButton>
@@ -172,19 +172,19 @@ const Layout = ({ children }: LayoutProps) => {
                         <MenuIcon />
                     </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Material-UI
+                        React Commons
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                             <SearchIcon />
                         </div>
                         <InputBase
-                            placeholder="Search…"
+                            placeholder="Search items"
                             classes={{
                                 root: classes.inputRoot,
                                 input: classes.inputInput,
                             }}
-                            inputProps={{ 'aria-label': 'Search' }}
+                            inputProps={{ 'aria-label': 'Search Items' }}
                         />
                     </div>
                     <div className={classes.grow} />
@@ -195,7 +195,7 @@ const Layout = ({ children }: LayoutProps) => {
                             </Badge>
                         </IconButton>
                         <IconButton aria-label="Show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
+                            <Badge badgeContent={8} color="secondary">
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>

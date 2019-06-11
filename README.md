@@ -10,9 +10,10 @@ You need to Bring your own backend (BYOB). Node sample backend for auth and crud
 -   Formik for forms handling
 -   Prettier, eslint (`typescript plugin` already configured) for code standards
 -   Husky pre-commit hook
--   Ant Design component library
+-   Material-UI component library
 -   Test cases (coming)
 -   Docker for deployment image
+-   Uses `react-app-rewired` to enable hot reloading
 
 ## TODO
 
