@@ -1,7 +1,7 @@
 import { Route, Redirect } from 'react-router'
 import { auth } from './auth'
 
-const PrivateRoute = (params: any) => {
+export const PrivateRoute = (params: any) => {
     const { component: Component, ...rest } = params
 
     return (
