@@ -1,5 +1,5 @@
 {
-    "name": "react-complete-application-template",
+    "name": "server-rfid-monitor",
     "version": "0.1.0",
     "private": true,
     "proxy": "http://localhost:8080",
@@ -10,6 +10,7 @@
         "@types/node": "11.9.5",
         "@types/yup": "^0.26.12",
         "axios": "^0.18.0",
+        "antd": "^3.15.0",
         "formik": "^1.5.1",
         "react": "^16.8.3",
         "react-dom": "^16.8.3",

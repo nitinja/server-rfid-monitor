@@ -7,7 +7,13 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Layout from '../layout/layout'
 
 /* Main App */
+
 class App extends Component<any> {
+    // private dummySubmit = async (values: EditorFormValues) => {
+    //     console.log(values)
+    //     return null
+    // }
+
     public render(): React.ReactNode {
         return (
             <>
@@ -19,6 +25,7 @@ class App extends Component<any> {
                     </Switch>
                 </Layout>
             </>
+
         )
     }
 }

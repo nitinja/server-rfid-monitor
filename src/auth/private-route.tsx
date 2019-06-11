@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
 import { Route, Redirect } from 'react-router'
-import { connect } from 'react-redux'
-import { mapStateToProps } from './login'
-import { AuthState } from './login-reducer'
-import { AppState } from '../store'
+import { auth } from './auth'
 
-const C = (props: any) => {
-    const { component: Component, isAuthenticated, ...rest } = props
+const PrivateRoute = (params: any) => {
+    const { component: Component, ...rest } = params
 
     return (
         <Route
             {...rest}
             render={props =>
-                isAuthenticated ? (
+                auth.isAuthenticated ? (
                     <Component {...props} />
                 ) : (
                     <Redirect to={{ pathname: '/login', state: { from: props.location } }} />
@@ -21,5 +17,3 @@ const C = (props: any) => {
         />
     )
 }
-
-export const PrivateRoute = connect((state: AppState) => ({ isAuthenticated: state.auth.isAuthenticated }))(C)

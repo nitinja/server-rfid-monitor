@@ -1,18 +1,15 @@
-## React Redux Complete Application Template with Auth and Users Management
+## RFID-Enabled Server Monitor App
 
-You need to Bring your own backend (BYOB). Node sample backend for auth and crud will be provided.
+You need to Bring your own backend (BYOB). Sample Data for simulation will be provided.
 
-## Tech Stack: Frontend
+## Tech Stack:
 
--   React, bootstrapped with `create-react-app`
--   Redux for state management
--   Typescript for types & compile ime error detection
--   Formik for forms handling
--   Prettier, eslint (`typescript plugin` already configured) for code standards
--   Husky pre-commit hook
--   Ant Design component library
--   Test cases (coming)
--   Docker for deployment image
+- React
+- Typescript
+- Formik for forms handling
+- Tslint, Prettier for code standards
+- Husky pre-commit hook
+- Ant Design component library
 
 ## TODO
 
