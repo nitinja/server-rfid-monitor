@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Redirect } from 'react-router'
 import { auth } from './auth'
 

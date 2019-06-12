@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router'
-import { Login } from '../auth/login'
-import { PrivateRoute } from '../auth/private-route'
-import Dashboard from '../dashboard/dashboard'
-import {AppLayout} from '../layout/layout'
+import { Login } from '../auth/Login'
+import { PrivateRoute } from '../auth/Private-route'
+import Dashboard from '../dashboard/Dashboard'
+import { hot } from 'react-hot-loader/root'
+import AppLayout from '../layout/Layout'
+// import { setConfig } from 'react-hot-loader'
+
+// setConfig({
+//     reloadHooks: false
+// })
 
 /* Main App */
 
@@ -15,17 +21,14 @@ class App extends Component<any> {
 
     public render(): React.ReactNode {
         return (
-            <>
-                <AppLayout>
-                    <Switch>
-                        <Route path="/login" component={Login} />
-                        <PrivateRoute path="/" exact component={Dashboard} />
-                    </Switch>
-                </AppLayout>
-            </>
-
+            <AppLayout>
+                <Switch>
+                    <Route path="/login" component={Login} />
+                    <PrivateRoute path="/" exact component={Dashboard} />
+                </Switch>
+            </AppLayout>
         )
     }
 }
 
-export default App
+export default (process.env.NODE_ENV === 'development' ? hot(App) : App)
